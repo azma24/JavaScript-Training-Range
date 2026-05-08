@@ -1,0 +1,81 @@
+/* ===========================
+   Reset & Base
+=========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  /* remの基準 */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Hiragino ProN', 'Yu Gothic', sans-serif;
+  color: #FFF;
+  background-color: #1a1a1a;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 90px;
+}
+
+h2 {
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  margin: 20px 0;
+}
+
+h3 {
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  width: 700px;
+  margin: 60px;
+  gap: 40px;
+}
+
+.menu {
+  list-style: none;
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.item {
+  padding: 15px 0;
+  cursor: pointer;
+  color: #919191;
+  transition: color 0.7s ease;
+}
+
+.item.active {
+  color: #FFF;
+  font-weight: bold;
+  border-left: 3px solid #FFF;
+  padding-left: 10px;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+
+.panel h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.panel p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #fff;
+}
