@@ -30,3 +30,11 @@ h2 {
   margin: 20px 0;
   transition: color 0.5s ease;
 }
+
+body.white {
+  background-color: #FFF;
+}
+
+h2.black {
+  color: #1a1a1a;
+}
