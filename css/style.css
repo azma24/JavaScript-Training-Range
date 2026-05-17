@@ -21,27 +21,23 @@ body {
   background-color: #1a1a1a;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
-  padding: 40px 90px;
-  margin: 0 auto;
-  max-width: 900px;
 }
 
 h1 {
   font-size: 1.2rem;
   letter-spacing: 0.05em;
   font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
-  margin-bottom: 10px;
 }
 
 header {
-  margin: 32px 0;
-  padding-bottom: 24px;
+  margin-top: 45px;
   text-align: center;
 }
 
 .inner {
-  /*  max-width: 800px;*/
+  max-width: 900px;
   margin: 0 auto;
+  padding: 40px 90px;
 }
 
 .label {
@@ -101,4 +97,22 @@ header {
   color: #b8adb8;
   text-align: center;
   flex-shrink: 0;
+}
+
+.sp-only {
+  display: none;
+}
+
+@media(max-width:600px) {
+  .sp-only {
+    display: block;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+
+  .inner {
+    padding: 20px 16px;
+  }
 }
